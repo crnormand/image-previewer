@@ -11,7 +11,7 @@ class ImagePreviewer extends Application {
     }
 
     getData() {
-        return { preview: this.imageUrl}
+        return { preview: this.imageUrl }
     }
 
     showPreview(imageUrl, previewPos) {
@@ -49,9 +49,11 @@ Hooks.on('renderFilePicker', (app, html, data) => {
         }
         // get the proper image path
         let path = ev.target.dataset.path;
-        let fileExtension = path.split('.')[path.split('.').length - 1].toLowerCase();
-        if (fileExtension in CONST.IMAGE_FILE_EXTENSIONS) {
-            imagePreviewer.showPreview(path, previewPos);
+        if (path) {
+          let fileExtension = path.split('.')[path.split('.').length - 1].toLowerCase();
+          if (fileExtension in CONST.IMAGE_FILE_EXTENSIONS) {
+              imagePreviewer.showPreview(path, previewPos);
+          }
         }
     }, ev => {
         imagePreviewer.hoverOff();

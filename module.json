@@ -1,15 +1,27 @@
 {
-    "name": "image-previewer",
-    "title": "Image Previewer",
-    "description": "A little app to preview images when you hover over them in the file picker menu.",
-    "version": "0.9",
-    "author": "Chris Normand/Nose66#6689",
-    "scripts": ["./image-previewer.js"],
-    "styles": ["./image-previewer.css"],
-    "packs": [],
-    "url": "https://github.com/crnormand/image-previewer",
-    "manifest": "https://raw.githubusercontent.com/crnormand/image-previewer/release/module.json",
-    "download": "https://github.com/crnormand/image-previewer/archive/0.9.zip",
-    "minimumCoreVersion": "9",
-    "compatibleCoreVersion": "9"
+  "title": "Image Previewer",
+  "description": "A little app to preview images when you hover over them in the file picker menu.",
+  "version": "0.10",
+  "scripts": [
+    "image-previewer.js"
+  ],
+  "styles": [
+    "image-previewer.css"
+  ],
+  "url": "https://github.com/crnormand/image-previewer",
+  "manifest": "https://raw.githubusercontent.com/crnormand/image-previewer/release/module.json",
+  "download": "https://github.com/crnormand/image-previewer/archive/0.10.zip",
+  "id": "image-previewer",
+  "authors": [
+    {
+      "name": "Chris Normand",
+      "email": "nose66@bellsouth.net",
+      "discord": "Nose66#6689",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  }
 }
